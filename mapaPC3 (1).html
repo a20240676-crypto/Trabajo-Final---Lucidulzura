@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8199b175ebcc809a934e7b9880310b5e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8199b175ebcc809a934e7b9880310b5e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8199b175ebcc809a934e7b9880310b5e = L.map(
+                "map_8199b175ebcc809a934e7b9880310b5e",
+                {
+                    center: [-12.03, -77.05],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0a41ef78c5f182b9186babc9bda35d99 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0a41ef78c5f182b9186babc9bda35d99.addTo(map_8199b175ebcc809a934e7b9880310b5e);
+        
+    
+            var marker_39602bea26e006a8132d96d2b9c46ebf = L.marker(
+                [-12.0698, -77.0794],
+                {
+}
+            ).addTo(map_8199b175ebcc809a934e7b9880310b5e);
+        
+    
+        var popup_2d3ed5476fedc884e1d4ee73d56793b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9bca873bf44e0330dfbf808b90e19ae2 = $(`<div id="html_9bca873bf44e0330dfbf808b90e19ae2" style="width: 100.0%; height: 100.0%;">     <b>PUCP</b><br>     Distrito: San Miguel<br>     Dirección: Av. Universitaria 1801<br>     Referencia: Puerta principal de la PUCP<br>     Horario: Solo con cita     </div>`)[0];
+                popup_2d3ed5476fedc884e1d4ee73d56793b7.setContent(html_9bca873bf44e0330dfbf808b90e19ae2);
+            
+        
+
+        marker_39602bea26e006a8132d96d2b9c46ebf.bindPopup(popup_2d3ed5476fedc884e1d4ee73d56793b7)
+        ;
+
+        
+    
+    
+            marker_39602bea26e006a8132d96d2b9c46ebf.bindTooltip(
+                `<div>
+                     PUCP
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a6029a85db75d01ddb514343388cd206 = L.marker(
+                [-12.0765, -77.082],
+                {
+}
+            ).addTo(map_8199b175ebcc809a934e7b9880310b5e);
+        
+    
+        var popup_8fcd70ac78d3200dfb7885f5975a6f55 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_89222003650b97fe44b217848f0d0bf7 = $(`<div id="html_89222003650b97fe44b217848f0d0bf7" style="width: 100.0%; height: 100.0%;">     <b>Plaza San Miguel</b><br>     Distrito: San Miguel<br>     Dirección: Av. La Marina 2000<br>     Referencia: Ingreso principal del centro comercial<br>     Horario: Solo con cita     </div>`)[0];
+                popup_8fcd70ac78d3200dfb7885f5975a6f55.setContent(html_89222003650b97fe44b217848f0d0bf7);
+            
+        
+
+        marker_a6029a85db75d01ddb514343388cd206.bindPopup(popup_8fcd70ac78d3200dfb7885f5975a6f55)
+        ;
+
+        
+    
+    
+            marker_a6029a85db75d01ddb514343388cd206.bindTooltip(
+                `<div>
+                     Plaza San Miguel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bcd2f05305d8fb1438730f5bf288fb59 = L.marker(
+                [-11.99449, -77.0767],
+                {
+}
+            ).addTo(map_8199b175ebcc809a934e7b9880310b5e);
+        
+    
+        var popup_853c28469e30c1d149562852e3a2cedf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_053a204daef2a10ba15cd970fe7edeb0 = $(`<div id="html_053a204daef2a10ba15cd970fe7edeb0" style="width: 100.0%; height: 100.0%;">     <b>Mercado Covida</b><br>     Distrito: Los Olivos<br>     Dirección: Av. Santiago Antunez de Mayolo 1178, Los Olivos 15301<br>     Referencia: Frente al Mercado Covida<br>     Horario: Lunes a Sábado: 9:00 a.m. - 6:00 p.m.     </div>`)[0];
+                popup_853c28469e30c1d149562852e3a2cedf.setContent(html_053a204daef2a10ba15cd970fe7edeb0);
+            
+        
+
+        marker_bcd2f05305d8fb1438730f5bf288fb59.bindPopup(popup_853c28469e30c1d149562852e3a2cedf)
+        ;
+
+        
+    
+    
+            marker_bcd2f05305d8fb1438730f5bf288fb59.bindTooltip(
+                `<div>
+                     Mercado Covida
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e501851c1ffb8bcc1955fd20012c54ab = L.marker(
+                [-11.993268914215419, -77.07931751434093],
+                {
+}
+            ).addTo(map_8199b175ebcc809a934e7b9880310b5e);
+        
+    
+        var popup_b872bb8020233b77fcf46d8c473a5871 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ed37174b7dc27c27c9bf2118d863559 = $(`<div id="html_3ed37174b7dc27c27c9bf2118d863559" style="width: 100.0%; height: 100.0%;">     <b>Rejalgar 1380</b><br>     Distrito: Los Olivos<br>     Dirección: Rejalgar 1380, Los Olivos 15301<br>     Referencia: Lunes a Sábado: 9:00 a.m. - 6:00 p.m.<br>     Horario: Solo con cita     </div>`)[0];
+                popup_b872bb8020233b77fcf46d8c473a5871.setContent(html_3ed37174b7dc27c27c9bf2118d863559);
+            
+        
+
+        marker_e501851c1ffb8bcc1955fd20012c54ab.bindPopup(popup_b872bb8020233b77fcf46d8c473a5871)
+        ;
+
+        
+    
+    
+            marker_e501851c1ffb8bcc1955fd20012c54ab.bindTooltip(
+                `<div>
+                     Rejalgar 1380
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            tile_layer_0a41ef78c5f182b9186babc9bda35d99.addTo(map_8199b175ebcc809a934e7b9880310b5e);
+        
+</script>
+</html>
