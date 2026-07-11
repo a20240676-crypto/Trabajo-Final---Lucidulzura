@@ -143,7 +143,7 @@ elif selected == 'Alfajores':
         st.subheader("📊 Distribución de Preferencias en el Mercado")
         st.write("Análisis vectorial que identifica los sabores con mayor rotación.")
         st.image("Aceptación_sabores_Lucidulzura.png", width=700)
- elif opcion_servicio == "Mapa de Puntos de Reparto":
+    elif opcion_servicio == "Mapa de Puntos de Reparto":
         st.subheader("📍 Georreferenciación y Densidad de Entregas")
         st.write("Visualización de las 4 zonas estratégicas principales de alta repetición y demanda de pedidos:")
         
