@@ -149,9 +149,16 @@ elif selected == 'Alfajores':
         st.write("Visualización de las 4 zonas estratégicas principales de alta repetición y demanda de pedidos:")
         
         # Aquí puedes colocar una imagen/mapa que tengas diseñada de tus 4 zonas
-       with open("mapa_trabajofinal.html", "r", encoding="utf-8") as f:
+    elif opcion_servicio == "Mapa de Puntos de Reparto":
+        st.subheader("📍 Georreferenciación y Densidad de Entregas")
+        st.write("Visualización de las 4 zonas estratégicas principales de alta repetición y demanda de pedidos:")
+        
+        # Copia estas 4 líneas exactamente con esta sangría:
+        with open("mapa_trabajofinal.html", "r", encoding="utf-8") as f:
             html_data = f.read()
-        st.components.v1.html(html_data, height=500, scrolling=True)
+        
+        import streamlit.components.v1 as components
+        components.html(html_data, height=500, scrolling=True)
 elif selected == 'Sobre nosotros':
     st.markdown("<h2 style='text-align: center; color: #5D4037;'>Mi Experiencia Programando 💻</h2>", unsafe_allow_html=True)
     
