@@ -27,7 +27,7 @@ if selected == 'Inicio':
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_inicio}</div>", unsafe_allow_html=True)
 
-elif selected == 'Proyecto':
+elif selected == 'Alfajores':
     st.markdown("<h2 style='text-align: center; color: #5D4037;'>Desarrollo de un Sistema Interactivo de Comunicación</h2>", unsafe_allow_html=True)
     
     st.markdown("### 🎯 Objetivo General")
