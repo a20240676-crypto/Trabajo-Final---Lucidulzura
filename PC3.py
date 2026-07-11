@@ -136,20 +136,20 @@ elif selected == 'Alfajores':
         recomendacion = "¡Contamos con opciones desde S/ 3.00! Ajusta tu presupuesto para recomendarte el alfajor ideal."
 
     st.info(recomendacion)
-elif selected == 'Servicios':
-    st.markdown("<h2 style='text-align: center; color: #5D4037;'>Análisis de Datos...</h2>", unsafe_allow_html=True)
+# Guardamos la opción del usuario en la variable 'opcion_servicio'
+    opcion_servicio = st.selectbox("Selecciona la métrica comercial que deseas revisar:", ["Aceptación de Sabores", "Mapa de Puntos de Reparto"])
     
-    grafico = st.selectbox("Selecciona la métrica comercial...", ["Aceptación de Sabores", "..."])
-    
-    if grafico == "Aceptación de Sabores":
+    if opcion_servicio == "Aceptación de Sabores":
         st.subheader("📊 Distribución de Preferencias en el Mercado")
-        st.write("Análisis vectorial...")
-        st.image("aceptacion_sabores.png", width=700)
+        st.write("Análisis vectorial que identifica los sabores con mayor rotación.")
+        st.image("Aceptación_sabores_Lucidulzura.png", width=700)
         
-    elif grafico == "Control Administrativo (Ventas)":
-        st.subheader("📈 Comportamiento de Puntos de Venta")
-        st.write("Optimización de stock y tendencias en tiempo real.")
-        st.image("control_administrative.png", width=700)
+    elif opcion_servicio == "Mapa de Puntos de Reparto":
+        st.subheader("📍 Georreferenciación y Densidad de Entregas")
+        st.write("Visualización de las 4 zonas estratégicas principales de alta repetición y demanda de pedidos:")
+        
+        # Aquí puedes colocar una imagen/mapa que tengas diseñada de tus 4 zonas
+        st.image("mapaPC3(1).html", width=700)
 
 elif selected == 'Sobre nosotros':
     st.markdown("<h2 style='text-align: center; color: #5D4037;'>Mi Experiencia Programando 💻</h2>", unsafe_allow_html=True)
