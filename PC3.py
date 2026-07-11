@@ -112,15 +112,17 @@ elif selected == 'Alfajores':
     st.write("Elige tus preferencias y el sistema te recomendará tu alfajor ideal de la carta:")
     
     antojo = st.selectbox("¿Qué tipo de sabor prefieres hoy?", ["Intenso/Chocolate", "Dulce tradicional", "Cítrico / Frutado", "Estilo Postre"])
-    presupuesto = st.number_input("¿Cuál es tu presupuesto estimado (S/.)?", min_value=0.0, value=15.0)
+    presupuesto = st.number_input("¿Cuál es tu presupuesto estimado (S/.)?", min_value=0.0, value=5.0)
     
     # Lógica de condicionales enriquecida con tu carta real
     if antojo == "Intenso/Chocolate" and presupuesto >= 3.5:
         recomendacion = "Tu opción ideal es el **Alfajor Tentación de Oreo (S/ 3.50)**."
     elif antojo == "Dulce tradicional" and presupuesto >= 3.0:
         recomendacion = "El clásico de clásicos: **Alfajor Clásico de Manjar (S/ 3.00)**."
-    elif antojo == "Cítrico / Frutado" and presupuesto >= 4.0:
-        recomendacion = "Te sugerimos probar el sofisticado **Alfajor Cheesecake de Maracuyá o Fresa (S/ 4.00)** o el fresco **Pie de Limón (S/ 3.50)**."
+   elif antojo == "Cítrico / Frutado" and presupuesto >= 4.0:
+        recomendacion = "Te sugerimos probar el sofisticado **Alfajor Cheesecake de Maracuyá o Fresa (S/ 4.00)**."
+    elif antojo == "Cítrico / Frutado" and presupuesto >= 3.5:
+        recomendacion = "Tu opción ideal es el fresco **Alfajor de Pay de Limón (S/ 3.50)**."
     elif antojo == "Estilo Postre" and presupuesto >= 4.0:
         recomendacion = "Debes probar de inmediato el **Alfajor de Tiramisú (S/ 4.00)** o el jugoso **Alfajor de Tres Leches (S/ 4.00)**."
     else:
