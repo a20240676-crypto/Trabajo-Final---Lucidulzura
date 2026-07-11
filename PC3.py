@@ -137,7 +137,7 @@ else:
 st.info(recomendacion)
 st.info(recomendacion)
 
-elif selected =='Servicios':
+    elif selected == 'Servicios':
     st.markdown("<h2 style='text-align: center; color: #5D4037;'>Análisis de Datos y Gráficos del Negocio</h2>", unsafe_allow_html=True)
     
     grafico = st.selectbox("Selecciona la métrica comercial que deseas revisar:", ["Aceptación de Sabores", "Control Administrativo (Ventas)"])
