@@ -136,24 +136,22 @@ elif selected == 'Alfajores':
         recomendacion = "¡Contamos con opciones desde S/ 3.00! Ajusta tu presupuesto para recomendarte el alfajor ideal."
 
     st.info(recomendacion)
-# Guardamos la opción del usuario en la variable 'opcion_servicio'
-    opcion_servicio = st.selectbox("Selecciona la métrica comercial que deseas revisar:", ["Aceptación de Sabores", "Mapa de Puntos de Reparto"])
-    
-# 1. Título y descripción de la sección de Analítica
+elif selected == 'Servicios':
+    # 1. Título principal de la sección de Analítica
     st.markdown("<h2 style='text-align: center; color: #5D4037;'>Análisis de Datos y Gráficos del Negocio</h2>", unsafe_allow_html=True)
     
-    # 2. Bloque único para el Gráfico de Sabores (sin menús desplegables)
+    # 2. Subtítulo y descripción del gráfico
     st.subheader("📊 Distribución de Preferencias en el Mercado")
-    st.write("Análisis cualitativo que identifica los sabores con mayor rotación en Lucidulzura.")
+    st.write("Análisis cualitativo que identifica los sabores con mayor rotación en Lucidulzura.") 
     
-    # Mostramos directamente tu gráfico
+    # 3. Tu gráfico directo
     st.image("Aceptacion_sabores_Lucidulzura.png", width=700)
+# LÍNEA FINAL DEL MENÚ: Pegada por completo al borde izquierdo
 elif selected == 'Sobre nosotros':
     st.markdown("<h2 style='text-align: center; color: #5D4037;'>Mi Experiencia Programando 💻</h2>", unsafe_allow_html=True)
     
-    texto_exp = """
-    Al inicio estaba nerviosa porque no conocía demasiado del entorno de desarrollo. Sin embargo, este proceso 
-    me demostró que la programación es una herramienta clave para cualquier comunicador en la era digital. 
-    Nos permite entender cómo funcionan las interfaces, interactuar con bases de datos y procesar feedback 
-    para tomar decisiones basadas en datos reales.
-    """
+    st.write("""
+    Desarrollar esta plataforma interactiva ha permitido conectar herramientas tecnológicas 
+    con el análisis de preferencias comerciales. A través de la lógica de programación, 
+    se optimiza la comunicación y se transforman los datos de consumo en decisiones estratégicas.
+    """)
