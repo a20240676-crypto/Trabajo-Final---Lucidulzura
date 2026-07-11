@@ -132,9 +132,9 @@ elif antojo == "Estilo Postre" and presupuesto >= 4.0:
     recomendacion = "Debes probar de inmediato el **Alfajor de Tiramisú (S/ 4.00)** o el jugoso **Alfajor de Tres Leches**"
 
 else:
-    recomendacion = "¡Contamos con opciones desde S/ 3.00! Ajusta tu presupuesto para recomendarte el alfajor ideal."
+        recomendacion = "¡Contamos con opciones desde S/ 3.00! Ajusta tu presupuesto..."
 
-st.info(recomendacion)
+    st.info(recomendacion)
 st.info(recomendacion)
 
 elif selected == 'Servicios':
