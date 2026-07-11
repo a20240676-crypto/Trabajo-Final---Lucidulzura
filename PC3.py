@@ -131,12 +131,13 @@ elif antojo == "Cítrico / Frutado" and presupuesto >= 3.5:
 elif antojo == "Estilo Postre" and presupuesto >= 4.0:
     recomendacion = "Debes probar de inmediato el **Alfajor de Tiramisú (S/ 4.00)** o el jugoso **Alfajor de Tres Leches**"
 
-else:
-        recomendacion = "¡Contamos con opciones desde S/ 3.00! Ajusta tu presupuesto..."
+# Línea 134: Tiene 4 espacios al inicio (porque está dentro de la pestaña Alfajores)
+    else:
+        # Línea 135: Tiene 8 espacios al inicio (adentro del else)
+        recomendacion = "¡Contamos con opciones desde S/ 3.00!..."
 
+    # Línea 137: TIENE EXACTAMENTE 4 ESPACIOS AL INICIO (Alineado con el 'else' de arriba)
     st.info(recomendacion)
-st.info(recomendacion)
-
 elif selected == 'Servicios':
     st.markdown("<h2 style='text-align: center; color: #5D4037;'>Análisis de Datos...</h2>", unsafe_allow_html=True)
     
