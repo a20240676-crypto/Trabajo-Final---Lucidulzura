@@ -15,7 +15,7 @@ if selected == 'Inicio':
     col1, col2 = st.columns(2)
     
     with col1:
-        st.image("Alfajor_cheesecakedemaracuya.jpeg", caption='Alfajores hechos con amor', width=300)
+        st.image("Alfajor_cheesecakedemaracuya.jpeg", caption='ALFAJORES HECHOS CON AMOR', width=300)
         
     with col2:
         texto_inicio = """
@@ -26,7 +26,48 @@ if selected == 'Inicio':
         ¡Calidad, frescura y dulzura en un solo lugar!
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_inicio}</div>", unsafe_allow_html=True)
+# --- NUEVA SECCIÓN: ¿QUÉ OFRECEMOS? ---
+    st.markdown("<br><hr>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center; color: #5D4037;'>Nuestras Especialidades y Servicios</h2>", unsafe_allow_html=True)
+    st.markdown("<br>", unsafe_allow_html=True)
 
+    # Creamos 3 columnas para mostrar la variedad de manera llamativa
+    sec1, sec2, sec3 = st.columns(3)
+
+    with sec1:
+        st.markdown("<h3 style='text-align: center; color: #8D6E63;'>Pedidos al por Mayor</h3>", unsafe_allow_html=True)
+        # Aquí puedes cambiar "ventas_mayor.jpeg" por el nombre real de tu foto
+        st.image("Alfajor_mordido.jpeg", use_container_width=True) 
+        st.markdown(
+            "<div style='text-align: center; font-size: 15px;'>"
+            "¿Tienes un evento, cumpleaños o reunión corporativa? "
+            "Llevamos la dulzura a gran escala con precios especiales para pedidos mayoristas."
+            "</div>", 
+            unsafe_allow_html=True
+        )
+
+    with sec2:
+        st.markdown("<h3 style='text-align: center; color: #8D6E63;'>Ediciones Temáticas</h3>", unsafe_allow_html=True)
+        # Aquí puedes cambiar "alfajores_tematicos.jpeg" por tu foto
+        st.image("Alfajor_cheesecakedemaracauya.jpeg", use_container_width=True) 
+        st.markdown(
+            "<div style='text-align: center; font-size: 15px;'>"
+            "¡Celebramos cada fecha especial contigo! Diseños exclusivos y personalizados para el "
+            "Día de la Madre, Día del Padre y fechas especiales."
+            "</div>", 
+            unsafe_allow_html=True
+        )
+
+    with sec3:
+        st.markdown("<h3 style='text-align: center; color: #8D6E63;'>Pride Edition 🌈</h3>", unsafe_allow_html=True)
+        # Aquí puedes cambiar "alfajores_pride.jpeg" por tu foto
+        st.image("alfajores_pride.jpeg", use_container_width=True) 
+        st.markdown(
+            "<div style='text-align: center; font-size: 15px;'>"
+            "Llenamos de color y sabor tus momentos favoritos con nuestras ediciones especiales llenas de orgullo."
+            "</div>", 
+            unsafe_allow_html=True
+        )
 elif selected == 'Alfajores':
     st.markdown("<h2 style='text-align: center; color: #5D4037;'>Desarrollo de un Sistema Interactivo de Comunicación</h2>", unsafe_allow_html=True)
     
