@@ -116,27 +116,25 @@ elif selected == 'Alfajores':
     
     # Lógica de condicionales enriquecida con tu carta real
    # Asegúrate de que todas estas palabras (if, elif, else) estén perfectamente alineadas a la izquierda:
-if antojo == "Intenso/Chocolate" and presupuesto >= 3.5:
-    recomendacion = "Tu opción ideal es el **Alfajor Tentación de Oreo (S/ 3.50)**."
-
-elif antojo == "Dulce tradicional" and presupuesto >= 3.0:
-    recomendacion = "El clásico de clásicos: **Alfajor Clásico de Manjar (S/ 3.00)**."
-
-elif antojo == "Cítrico / Frutado" and presupuesto >= 4.0:
-    recomendacion = "Te sugerimos probar el sofisticado **Alfajor Cheesecake de Maracuyá o Fresa (S/ 4.00)**."
-
-elif antojo == "Cítrico / Frutado" and presupuesto >= 3.5:
-    recomendacion = "Tu opción ideal es el fresco **Alfajor de Pay de Limón (S/ 3.50)**."
-
-elif antojo == "Estilo Postre" and presupuesto >= 4.0:
-    recomendacion = "Debes probar de inmediato el **Alfajor de Tiramisú (S/ 4.00)** o el jugoso **Alfajor de Tres Leches**"
-
-# Línea 134: Tiene 4 espacios al inicio (porque está dentro de la pestaña Alfajores)
+# Lógica de condicionales enriquecida con tu carta real
+    if antojo == "Intenso/Chocolate" and presupuesto >= 3.5:
+        recomendacion = "Tu opción ideal es el **Alfajor Tentación de Oreo (S/ 3.50)**."
+        
+    elif antojo == "Dulce tradicional" and presupuesto >= 3.0:
+        recomendacion = "El clásico de clásicos: **Alfajor Clásico de Manjar (S/ 3.00)**."
+        
+    elif antojo == "Cítrico / Frutado" and presupuesto >= 4.0:
+        recomendacion = "Te sugerimos probar el sofisticado **Alfajor Cheesecake de Maracuyá o Fresa (S/ 4.00)**."
+        
+    elif antojo == "Cítrico / Frutado" and presupuesto >= 3.5:
+        recomendacion = "Tu opción ideal es el fresco **Alfajor de Pay de Limón (S/ 3.50)**."
+        
+    elif antojo == "Estilo Postre" and presupuesto >= 4.0:
+        recomendacion = "Debes probar de inmediato el **Alfajor de Tiramisú (S/ 4.00)** o el jugoso **Alfajor de Tres Leches**."
+        
     else:
-        # Línea 135: Tiene 8 espacios al inicio (adentro del else)
-        recomendacion = "¡Contamos con opciones desde S/ 3.00!..."
+        recomendacion = "¡Contamos con opciones desde S/ 3.00! Ajusta tu presupuesto para recomendarte el alfajor ideal."
 
-    # Línea 137: TIENE EXACTAMENTE 4 ESPACIOS AL INICIO (Alineado con el 'else' de arriba)
     st.info(recomendacion)
 elif selected == 'Servicios':
     st.markdown("<h2 style='text-align: center; color: #5D4037;'>Análisis de Datos...</h2>", unsafe_allow_html=True)
