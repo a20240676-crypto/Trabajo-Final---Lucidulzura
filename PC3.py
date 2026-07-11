@@ -5,7 +5,7 @@ import streamlit.components.v1 as components
 # Configuración del menú horizontal alineado a tus diapositivas
 selected = option_menu(
     menu_title=None, 
-    options=['Inicio', 'Proyecto', 'Servicios', 'Sobre nosotros'], # Alineado con tu video
+    options=['Inicio', 'Alfajores', 'Servicios', 'Sobre nosotros'], # Alineado con tu video
     icons=['home', 'folder', 'box-seam', 'person-heart'], 
     menu_icon=None, default_index=0, orientation="horizontal")
 
@@ -15,11 +15,11 @@ if selected == 'Inicio':
     col1, col2 = st.columns(2)
     
     with col1:
-        st.image("Ana.jpeg", caption='Ana Lucía Ibañez - Fundadora', width=300)
+        st.image("Alfajor_cheesecakedemaracuya.jpeg", caption='alfajor de cheeesecake de maracuya - alfajor', width=300)
         
     with col2:
         texto_inicio = """
-        En **Lucidulzura**, transformamos la repostería tradicional en una experiencia de sabor única. 
+        En Lucidulzura, transformamos la repostería tradicional en una experiencia de sabor única. 
         Nos dedicamos a la elaboración artesanal de alfajores de chocolate premium y cupcakes finos, 
         cuidando minuciosamente cada detalle, desde la calidad de nuestros ingredientes hasta la presentación final. 
         Creamos el detalle perfecto para regalar, compartir o darte ese gusto que tanto te mereces. 
