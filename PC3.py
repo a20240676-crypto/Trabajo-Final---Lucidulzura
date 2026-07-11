@@ -173,5 +173,6 @@ st.write("""
     
     Cada postre que sale de nuestro horno está hecho con paciencia, dedicación y ese toque casero y auténtico que transforma un simple antojo en un momento especial.
     """)
-# Agrega tu imagen aquí (con 4 espacios de sangría al inicio)
+    
+    # Agrega tu imagen aquí (con 4 espacios de sangría al inicio)
     st.image("Alfajor_mordido.jpeg", caption="Horneando con amor en Lucidulzura", width=500)
