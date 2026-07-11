@@ -137,15 +137,20 @@ elif selected == 'Alfajores':
 
     st.info(recomendacion)
 elif selected == 'Servicios':
-    # 1. Título principal de la sección de Analítica
+    # 1. Título principal de la sección
     st.markdown("<h2 style='text-align: center; color: #5D4037;'>Análisis de Datos y Gráficos del Negocio</h2>", unsafe_allow_html=True)
     
-    # 2. Subtítulo y descripción del gráfico
-    st.subheader("📊 Distribución de Preferencias en el Mercado")
-    st.write("Análisis cualitativo que identifica los sabores con mayor rotación en Lucidulzura.") 
+    # 2. Subtítulo y descripción del Mapa
+    st.subheader("📍 Georreferenciación y Densidad de Entregas")
+    st.write("Visualización de las zonas estratégicas principales de alta repetición de pedidos en Lucidulzura:")
     
-    # 3. Tu gráfico directo
-    st.image("Aceptacion_sabores_Lucidulzura.png", width=700)
+    # 3. Apertura y lectura de tu archivo HTML de forma segura
+    with open("mapa_trabajofinal.html", "r", encoding="utf-8") as f:
+        html_data = f.read()
+    
+    # 4. Renderizado del mapa en la pantalla de Streamlit
+    import streamlit.components.v1 as components
+    components.html(html_data, height=500, scrolling=True)
 # LÍNEA FINAL DEL MENÚ: Pegada por completo al borde izquierdo
 elif selected == 'Sobre nosotros':
     st.markdown("<h2 style='text-align: center; color: #5D4037;'>Mi Experiencia Programando 💻</h2>", unsafe_allow_html=True)
