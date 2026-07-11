@@ -137,15 +137,15 @@ else:
 st.info(recomendacion)
 st.info(recomendacion)
 
-    elif selected == 'Servicios':
-    st.markdown("<h2 style='text-align: center; color: #5D4037;'>Análisis de Datos y Gráficos del Negocio</h2>", unsafe_allow_html=True)
+elif selected == 'Servicios':
+    st.markdown("<h2 style='text-align: center; color: #5D4037;'>Análisis de Datos...</h2>", unsafe_allow_html=True)
     
-    grafico = st.selectbox("Selecciona la métrica comercial que deseas revisar:", ["Aceptación de Sabores", "Control Administrativo (Ventas)"])
+    grafico = st.selectbox("Selecciona la métrica comercial...", ["Aceptación de Sabores", "..."])
     
     if grafico == "Aceptación de Sabores":
         st.subheader("📊 Distribución de Preferencias en el Mercado")
-        st.write("Análisis vectorial que identifica los sabores con mayor rotación.")
-        st.image("aceptacion_sabores.png", width=700) 
+        st.write("Análisis vectorial...")
+        st.image("aceptacion_sabores.png", width=700)
         
     elif grafico == "Control Administrativo (Ventas)":
         st.subheader("📈 Comportamiento de Puntos de Venta")
