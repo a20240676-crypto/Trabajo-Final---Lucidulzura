@@ -1,4 +1,19 @@
-import streamlit as st
+# Inyectar fuente elegante (Playfair Display) desde Google Fonts
+st.markdown(
+    """
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+    
+    /* Aplicar la fuente a todos los títulos principales */
+    h1, h2, h3 {
+        font-family: 'Playfair Display', serif !important;
+        font-weight: 600 !important;
+        letter-spacing: 0.5px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)import streamlit as st
 from streamlit_option_menu import option_menu
 import streamlit.components.v1 as components
 
@@ -37,7 +52,7 @@ if selected == 'Inicio':
     with sec1:
         st.markdown("<h3 style='text-align: center; color: #8D6E63;'>Pedidos al por Mayor</h3>", unsafe_allow_html=True)
         # Aquí puedes cambiar "ventas_mayor.jpeg" por el nombre real de tu foto
-        st.image("Alfajor_mordido.jpeg", use_container_width=True) 
+        st.image("Pack.png", use_container_width=True) 
         st.markdown(
             "<div style='text-align: center; font-size: 15px;'>"
             "¿Tienes un evento, cumpleaños o reunión corporativa? "
@@ -49,7 +64,7 @@ if selected == 'Inicio':
     with sec2:
         st.markdown("<h3 style='text-align: center; color: #8D6E63;'>Ediciones Temáticas</h3>", unsafe_allow_html=True)
         # Aquí puedes cambiar "alfajores_tematicos.jpeg" por tu foto
-        st.image("Alfajor_cheesecakedemaracauya.jpeg", use_container_width=True) 
+        st.image("Feliz_dia_papa.png", use_container_width=True) 
         st.markdown(
             "<div style='text-align: center; font-size: 15px;'>"
             "¡Celebramos cada fecha especial contigo! Diseños exclusivos y personalizados para el "
@@ -59,12 +74,12 @@ if selected == 'Inicio':
         )
 
     with sec3:
-        st.markdown("<h3 style='text-align: center; color: #8D6E63;'>Pride Edition 🌈</h3>", unsafe_allow_html=True)
+        st.markdown("<h3 style='text-align: center; color: #8D6E63;'>Flores Edition</h3>", unsafe_allow_html=True)
         # Aquí puedes cambiar "alfajores_pride.jpeg" por tu foto
-        st.image("alfajores_pride.jpeg", use_container_width=True) 
+        st.image("Caja_de_alfajores_decorada.jpeg", use_container_width=True) 
         st.markdown(
             "<div style='text-align: center; font-size: 15px;'>"
-            "Llenamos de color y sabor tus momentos favoritos con nuestras ediciones especiales llenas de orgullo."
+            "Llenamos de color y sabor tus momentos favoritos con nuestras ediciones especiales llenas de creatividad."
             "</div>", 
             unsafe_allow_html=True
         )
