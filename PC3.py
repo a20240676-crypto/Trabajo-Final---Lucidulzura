@@ -139,22 +139,28 @@ elif selected == 'Alfajores':
 # Guardamos la opción del usuario en la variable 'opcion_servicio'
     opcion_servicio = st.selectbox("Selecciona la métrica comercial que deseas revisar:", ["Aceptación de Sabores", "Mapa de Puntos de Reparto"])
     
+   # 1. Menú desplegable con las opciones correctas
+    opcion_servicio = st.selectbox("Selecciona la métrica comercial que deseas revisar:", ["Aceptación de Sabores", "Mapa de Puntos de Reparto"])
+    
+    # 2. Bloque para el Gráfico de Sabores
     if opcion_servicio == "Aceptación de Sabores":
         st.subheader("📊 Distribución de Preferencias en el Mercado")
-        st.write("Análisis vectorial que identifica los sabores con mayor rotación.")
-        st.image("Aceptación_sabores_Lucidulzura.png", width=700)
+        st.write("Análisis que identifica los sabores con mayor rotación en Lucidulzura.")
+        # Usamos el nombre exacto de tu imagen (asegúrate de que termine en .png o .jpg en tu carpeta)
+        st.image("Aceptacion_sabores_Lucidulzura.png", width=700)
+        
+    # 3. Bloque para el Mapa interactivo HTML
     elif opcion_servicio == "Mapa de Puntos de Reparto":
         st.subheader("📍 Georreferenciación y Densidad de Entregas")
-        st.write("Visualización de las 4 zonas estratégicas principales de alta repetición y demanda de pedidos:")
+        st.write("Visualización de las zonas estratégicas principales de alta repetición de pedidos:")
         
-        # Estas líneas abren tu mapa interactivo
+        # Leemos el archivo HTML correctamente alineado
         with open("mapa_trabajofinal.html", "r", encoding="utf-8") as f:
             html_data = f.read()
         
-        # Estas líneas lo muestran en la pantalla
+        # Mostramos el mapa (import y components van alineados con el 'with')
         import streamlit.components.v1 as components
-        components.html(html_data, height=500, scrolling=True)       
-
+        components.html(html_data, height=500, scrolling=True)
 elif selected == 'Sobre nosotros':
     st.markdown("<h2 style='text-align: center; color: #5D4037;'>Mi Experiencia Programando 💻</h2>", unsafe_allow_html=True)
     
