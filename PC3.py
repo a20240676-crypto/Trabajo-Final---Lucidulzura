@@ -162,13 +162,13 @@ elif selected == 'Servicios':
     st.image("Aceptacion_sabores_Lucidulzura.png", width=700)
 # LÍNEA FINAL DEL MENÚ: Pegada por completo al borde izquierdo
 elif selected == 'Sobre nosotros':
-        st.markdown("<h2 style='text-align: center; color: #5D4037;'>¿Comó se creo Lucidulzura?</h2>", unsafe_allow_html=True)   
+    st.markdown("<h2 style='text-align: center; color: #5D4037;'>¿Cómo se creó Lucidulzura?</h2>", unsafe_allow_html=True)
     st.write("""
     Lucidulzura nace de la unión de dos cosas que llenan mi corazón: Lucy, en honor a mi abuelo, y dulzura, por el cariño infinito que le pongo a la repostería artesanal. Es un nombre que lleva historia, respeto y mucho amor familiar en cada letra.
-    
+
     **Compartiendo un talento, horneando felicidad**
-    
+
     Esta aventura comenzó como una experiencia hermosa y muy grata. Guiada por mi pasión por la repostería y el deseo de generar mis propios ingresos, descubrí que tenía un talento en las manos que no podía quedarme solo para mí. ¡Tenía que compartirlo con los demás!
-    
+
     Cada postre que sale de nuestro horno está hecho con paciencia, dedicación y ese toque casero y auténtico que transforma un simple antojo en un momento especial.
     """)
