@@ -135,7 +135,7 @@ else:
     recomendacion = "¡Contamos con opciones desde S/ 3.00! Ajusta tu presupuesto para recomendarte el alfajor ideal."
 
 st.info(recomendacion)
-    st.info(recomendacion)
+st.info(recomendacion)
 
 elif selected == 'Servicios':
     st.markdown("<h2 style='text-align: center; color: #5D4037;'>Análisis de Datos y Gráficos del Negocio</h2>", unsafe_allow_html=True)
