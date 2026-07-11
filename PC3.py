@@ -73,9 +73,9 @@ elif selected == 'Alfajores':
     
     st.markdown("### 🎯 Objetivo General")
     st.write("🎯 Objetivo General")
-("Diseñar, desarrollar e implementar una plataforma web integral, funcional y altamente interactiva, estructurada con el propósito de centralizar la gestión de la comunicación comercial y optimizar la recolección de datos cualitativos. El sistema buscará transformar la interacción con el usuario en información de valor mediante el análisis sistemático de sus preferencias, facilitando así la identificación de tendencias de consumo y la toma de decisiones estratégicas basadas en evidencia.")
+st.write("Diseñar, desarrollar e implementar una plataforma web integral, funcional y altamente interactiva, estructurada con el propósito de centralizar la gestión de la comunicación comercial y optimizar la recolección de datos cualitativos. El sistema buscará transformar la interacción con el usuario en información de valor mediante el análisis sistemático de sus preferencias, facilitando así la identificación de tendencias de consumo y la toma de decisiones estratégicas basadas en evidencia.")
     
-    st.markdown("")
+    st.markdown("---")
     
     # NUEVA SECCIÓN: CARTA DE ALFAJORES PREMIUM
     st.markdown("<h3 style='color: #5D4037;'>✨ Nuestra Carta de Alfajores Premium</h3>", unsafe_allow_html=True)
