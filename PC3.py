@@ -149,7 +149,7 @@ elif selected == 'Alfajores':
         st.write("Visualización de las 4 zonas estratégicas principales de alta repetición y demanda de pedidos:")
         
         # Aquí puedes colocar una imagen/mapa que tengas diseñada de tus 4 zonas
-        st.image("mapaPC3(1).html", width=700)
+        st.image("mapa_trabajofinal.html", width=700)
 
 elif selected == 'Sobre nosotros':
     st.markdown("<h2 style='text-align: center; color: #5D4037;'>Mi Experiencia Programando 💻</h2>", unsafe_allow_html=True)
@@ -160,15 +160,3 @@ elif selected == 'Sobre nosotros':
     Nos permite entender cómo funcionan las interfaces, interactuar con bases de datos y procesar feedback 
     para tomar decisiones basadas en datos reales.
     """
-    st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_exp}</div>", unsafe_allow_html=True)
-    
-    st.markdown("---")
-    st.markdown("#### 🎥 Evidencias de aprendizaje (Prácticas del curso)")
-    
-    colA, colB, colC = st.columns(3)
-    with colA:
-        st.link_button("Video 1: Strings y Listas", "https://canva.link/hpbib9zh7qu3t0d")
-    with colB:
-        st.link_button("Video 2: Bucles For y While", "https://canva.link/rbkg3dluhxar8d9")
-    with colC:
-        st.link_button("Video 3: Sustentación Blog", "https://canva.link/sekfxj7b57e9oaf")
