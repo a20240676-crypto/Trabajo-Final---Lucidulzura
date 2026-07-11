@@ -162,8 +162,7 @@ elif selected == 'Servicios':
     st.image("Aceptacion_sabores_Lucidulzura.png", width=700)
 # LÍNEA FINAL DEL MENÚ: Pegada por completo al borde izquierdo
 elif selected == 'Sobre nosotros':
-        st.markdown("<h2 style='text-align: center; color: #5D4037;'>¿Comó se creo Lucidulzura?</h2>", unsafe_allow_html=True)
-    
+        st.markdown("<h2 style='text-align: center; color: #5D4037;'>¿Comó se creo Lucidulzura?</h2>", unsafe_allow_html=True)   
 st.write("""
     Lucidulzura nace de la unión de dos cosas que llenan mi corazón: Lucy, en honor a mi abuelo, y dulzura, por el cariño infinito que le pongo a la repostería artesanal. Es un nombre que lleva historia, respeto y mucho amor familiar en cada letra.
     
