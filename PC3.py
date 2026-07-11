@@ -139,16 +139,15 @@ elif selected == 'Alfajores':
 # Guardamos la opción del usuario en la variable 'opcion_servicio'
     opcion_servicio = st.selectbox("Selecciona la métrica comercial que deseas revisar:", ["Aceptación de Sabores", "Mapa de Puntos de Reparto"])
     
-   # 1. Menú desplegable con las opciones correctas
-    opcion_servicio = st.selectbox("Selecciona la métrica comercial que deseas revisar:", ["Aceptación de Sabores", "Mapa de Puntos de Reparto"])
+# 1. Título y descripción de la sección de Analítica
+    st.markdown("<h2 style='text-align: center; color: #5D4037;'>Análisis de Datos y Gráficos del Negocio</h2>", unsafe_allow_html=True)
     
-    # 2. Bloque para el Gráfico de Sabores
-    if opcion_servicio == "Aceptación de Sabores":
-        st.subheader("📊 Distribución de Preferencias en el Mercado")
-        st.write("Análisis que identifica los sabores con mayor rotación en Lucidulzura.")
-        # Usamos el nombre exacto de tu imagen (asegúrate de que termine en .png o .jpg en tu carpeta)
-        st.image("Aceptacion_sabores_Lucidulzura.png", width=700)
-
+    # 2. Bloque único para el Gráfico de Sabores (sin menús desplegables)
+    st.subheader("📊 Distribución de Preferencias en el Mercado")
+    st.write("Análisis cualitativo que identifica los sabores con mayor rotación en Lucidulzura.")
+    
+    # Mostramos directamente tu gráfico
+    st.image("Aceptacion_sabores_Lucidulzura.png", width=700)
 elif selected == 'Sobre nosotros':
     st.markdown("<h2 style='text-align: center; color: #5D4037;'>Mi Experiencia Programando 💻</h2>", unsafe_allow_html=True)
     
