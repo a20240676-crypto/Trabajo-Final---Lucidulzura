@@ -138,7 +138,7 @@ elif selected == 'Alfajores':
     st.info(recomendacion)
 elif selected == 'Servicios':
     # 1. Título principal de la sección
-    st.markdown("<h2 style='text-align: center; color: #5D4037;'>Análisis de Datos y Gráficos del Negocio</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center; color: #5D4037;'>Mapa: lugares de reparto</h2>", unsafe_allow_html=True)
     
     # 2. Subtítulo y descripción del Mapa
     st.subheader("📍 Georreferenciación y Densidad de Entregas")
@@ -163,7 +163,7 @@ elif selected == 'Servicios':
 # LÍNEA FINAL DEL MENÚ: Pegada por completo al borde izquierdo
 elif selected == 'Sobre nosotros':
         st.markdown("<h2 style='text-align: center; color: #5D4037;'>¿Comó se creo Lucidulzura?</h2>", unsafe_allow_html=True)   
-st.write("""
+    st.write("""
     Lucidulzura nace de la unión de dos cosas que llenan mi corazón: Lucy, en honor a mi abuelo, y dulzura, por el cariño infinito que le pongo a la repostería artesanal. Es un nombre que lleva historia, respeto y mucho amor familiar en cada letra.
     
     **Compartiendo un talento, horneando felicidad**
