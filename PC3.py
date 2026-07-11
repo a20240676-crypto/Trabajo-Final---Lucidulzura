@@ -148,19 +148,7 @@ elif selected == 'Alfajores':
         st.write("Análisis que identifica los sabores con mayor rotación en Lucidulzura.")
         # Usamos el nombre exacto de tu imagen (asegúrate de que termine en .png o .jpg en tu carpeta)
         st.image("Aceptacion_sabores_Lucidulzura.png", width=700)
-        
-    # 3. Bloque para el Mapa interactivo HTML
-    elif opcion_servicio == "Mapa de Puntos de Reparto":
-        st.subheader("📍 Georreferenciación y Densidad de Entregas")
-        st.write("Visualización de las zonas estratégicas principales de alta repetición de pedidos:")
-        
-        # Leemos el archivo HTML correctamente alineado
-        with open("mapa_trabajofinal.html", "r", encoding="utf-8") as f:
-            html_data = f.read()
-        
-        # Mostramos el mapa (import y components van alineados con el 'with')
-        import streamlit.components.v1 as components
-        components.html(html_data, height=500, scrolling=True)
+
 elif selected == 'Sobre nosotros':
     st.markdown("<h2 style='text-align: center; color: #5D4037;'>Mi Experiencia Programando 💻</h2>", unsafe_allow_html=True)
     
