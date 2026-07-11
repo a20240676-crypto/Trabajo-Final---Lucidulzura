@@ -151,6 +151,15 @@ elif selected == 'Servicios':
     # 4. Renderizado del mapa en la pantalla de Streamlit
     import streamlit.components.v1 as components
     components.html(html_data, height=500, scrolling=True)
+    # 1. Título principal de la sección de Analítica
+    st.markdown("<h2 style='text-align: center; color: #5D4037;'>Análisis de Datos y Gráficos del Negocio</h2>", unsafe_allow_html=True)
+    
+    # 2. Subtítulo y descripción del gráfico
+    st.subheader("📊 Distribución de Preferencias en el Mercado")
+    st.write("Análisis cualitativo que identifica los sabores con mayor rotación en Lucidulzura.") 
+    
+    # 3. Tu gráfico directo
+    st.image("Aceptacion_sabores_Lucidulzura.png", width=700)
 # LÍNEA FINAL DEL MENÚ: Pegada por completo al borde izquierdo
 elif selected == 'Sobre nosotros':
     st.markdown("<h2 style='text-align: center; color: #5D4037;'>Mi Experiencia Programando 💻</h2>", unsafe_allow_html=True)
