@@ -15,7 +15,7 @@ if selected == 'Inicio':
     col1, col2 = st.columns(2)
     
     with col1:
-        st.image("Alfajor_cheesecakedemaracuya.jpeg", caption='alfajor de cheeesecake de maracuya - alfajor', width=300)
+        st.image("Alfajor_cheesecakedemaracuya.jpeg", caption='Alfajores hechos con amor', width=300)
         
     with col2:
         texto_inicio = """
