@@ -1,18 +1,3 @@
-# Inyectar fuente elegante (Playfair Display) desde Google Fonts
-st.markdown(
-    """
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-    
-    /* Aplicar la fuente a todos los títulos principales */
-    h1, h2, h3 {
-        font-family: 'Playfair Display', serif !important;
-        font-weight: 600 !important;
-        letter-spacing: 0.5px;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
 )import streamlit as st
 from streamlit_option_menu import option_menu
 import streamlit.components.v1 as components
