@@ -1,7 +1,0 @@
-config.toml
-[theme]
-primaryColor = "#782E4B"         # Color de acento (para botones, líneas activas, etc.)
-backgroundColor = "#F7EBE1"      # Fondo general de la página (Beige claro)
-secondaryBackgroundColor = "#EDDCD2" # Fondo del menú lateral o tarjetas
-textColor = "#4A2810"            # Color de la fuente principal (Marrón chocolate)
-font = "sans serif"
